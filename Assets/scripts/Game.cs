@@ -20,27 +20,21 @@ public class Game : MonoBehaviour
     public Text player2Info;
     public Text txtWinner;
     public GameObject roundPanel;
-    public Button btnJogar;
+    public Button btnPlay;
+    public Button btnControls;
+    public Button btnBack;
+    public Button btnMenu;
 
     private void Start()
     {
         screenBoard = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
-
-        // Debug.Log(String.Format("sbX {0}, sbY {1}", sb.x, sb.y));
-
-        // StartGame();
     }
 
     private void Update()
     {
         screenBoard = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
 
-        // remover
-        if (player1 == null) {
-            //StartGame();
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
+        if (gameOn && Input.GetKeyDown(KeyCode.P))
         {
             pause = !pause;
         }
@@ -52,7 +46,22 @@ public class Game : MonoBehaviour
 
         if (!gameOn && Input.GetKeyDown(KeyCode.J))
         {
-            btnJogar.onClick.Invoke();
+            btnPlay.onClick.Invoke();
+        }
+
+        if (!gameOn && Input.GetKeyDown(KeyCode.C))
+        {
+            btnControls.onClick.Invoke();
+        }
+
+        if (!gameOn && Input.GetKeyDown(KeyCode.V))
+        {
+            btnBack.onClick.Invoke();
+        }
+
+        if (gameOn && Input.GetKeyDown(KeyCode.M))
+        {
+            btnMenu.onClick.Invoke();
         }
 
         if (gameOn && !pause && !endRoud)
@@ -150,5 +159,14 @@ public class Game : MonoBehaviour
         {
             
         }
+    }
+
+    public void GoToMenu()
+    {
+        gameOn = false;
+        endRoud = false;
+        pause = false;
+        player1 = null;
+        player2 = null;
     }
 }

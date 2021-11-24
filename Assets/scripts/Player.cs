@@ -59,7 +59,6 @@ public class Player
 
         if (Input.GetKey(keyShoot))
         {
-            Debug.Log(String.Format("shootTimer {0}", shootTimer));
             if (shootTimer <= 0)
             {
                 Shoot();
@@ -144,16 +143,12 @@ public class Player
             {
                 if ((enemyPlayer.PosX + 1f >= projectile.PosX))
                 {
-                    // Debug.Log(String.Format("--------ATINGIU--------"));
-                    // Debug.Log(String.Format("enemyPlayer {0}, projectile {1}", enemyPlayer.PosX, projectile.PosX));
                     return true;
                 }
             } else if (shootDirection == 1)
             {
                 if ((enemyPlayer.PosX - 0.5f <= projectile.PosX))
                 {
-                    // Debug.Log(String.Format("--------ATINGIU--------"));
-                    // Debug.Log(String.Format("enemyPlayer {0}, projectile {1}", enemyPlayer.PosX, projectile.PosX));
                     return true;
                 }
             }
