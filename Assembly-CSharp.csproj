@@ -54,20 +54,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\Projectile.cs" />
-    <Compile Include="Assets\scripts\Game.cs" />
-    <Compile Include="Assets\GLDraw.cs" />
-    <Compile Include="Assets\scripts\Player.cs" />
-    <Compile Include="Assets\Unity UI Samples\Scripts\DropMe.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\ResizePanel.cs" />
-    <Compile Include="Assets\Unity UI Samples\Scripts\ShowSliderValue.cs" />
-    <Compile Include="Assets\Unity UI Samples\Scripts\ChangeColor.cs" />
-    <Compile Include="Assets\Unity UI Samples\Scripts\ActiveStateToggler.cs" />
-    <Compile Include="Assets\Unity UI Samples\Scripts\ScrollDetailTexture.cs" />
-    <Compile Include="Assets\Unity UI Samples\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\DragPanel.cs" />
-    <Compile Include="Assets\Unity UI Samples\Scripts\DragMe.cs" />
-    <Compile Include="Assets\Unity UI Samples\Scripts\TiltWindow.cs" />
+    <Compile Include="Assets\Unity UI Samples\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Unity UI Samples\Scripts\ApplicationManager.cs" />
+    <Compile Include="Assets\Unity UI Samples\Scripts\ActiveStateToggler.cs" />
+    <Compile Include="Assets\scripts\Game.cs" />
+    <Compile Include="Assets\Unity UI Samples\Scripts\DragMe.cs" />
+    <Compile Include="Assets\Unity UI Samples\Scripts\ShowSliderValue.cs" />
+    <Compile Include="Assets\Unity UI Samples\Scripts\ScrollDetailTexture.cs" />
+    <Compile Include="Assets\Unity UI Samples\Scripts\DropMe.cs" />
+    <Compile Include="Assets\scripts\Player.cs" />
+    <Compile Include="Assets\Unity UI Samples\Scripts\ChangeColor.cs" />
+    <Compile Include="Assets\Unity UI Samples\Scripts\TiltWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Unity UI Samples\Textures and Sprites\SF UI\Background\LICENSE.txt" />
